@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "potpun",
+  "version": "${version}",
+  "name": "PotPun",
+  "description": "Potpun is croatian for Complete....I may have taken this word literally.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/potpun/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.sirantonic.potpun.datagen.PotPunDataGen"
+    ],
+    "client": [
+      "io.github.sirantonic.potpun.client.PotPunClient"
+    ],
+    "main": [
+      "io.github.sirantonic.potpun.PotPun"
+    ]
+  },
+  "mixins": [
+    "potpun.mixins.json",
+    {
+      "config": "potpun.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
