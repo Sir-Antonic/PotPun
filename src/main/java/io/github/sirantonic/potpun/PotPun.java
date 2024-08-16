@@ -1,17 +1,19 @@
 package io.github.sirantonic.potpun;
 
-import io.github.sirantonic.potpun.registeritems.ModItems;
+import io.github.sirantonic.potpun.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ItemGroups;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PotPun implements ModInitializer {
     public static final String MOD_ID = "potpun";
+    public static final String MOD_NAME = "Potpun";
+
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
     @Override
     public void onInitialize() {
-        
-        //Item Registration
+
         ModItems.initialize();
     }
 }

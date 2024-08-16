@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "potpun:jungle_stick"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "potpun:acacia_stick"
+  }
+}

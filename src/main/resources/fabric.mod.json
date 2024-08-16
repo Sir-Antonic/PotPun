@@ -4,14 +4,20 @@
   "version": "${version}",
   "name": "PotPun",
   "description": "Potpun is croatian for Complete....I may have taken this word literally.",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "Sir Antonic"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Sir-Antonic/PotPun/",
+    "sources": "https://github.com/Sir-Antonic/PotPun/",
+    "issues": "https://github.com/Sir-Antonic/PotPun/issues"
+  },
   "license": "MIT",
   "icon": "assets/potpun/icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "io.github.sirantonic.potpun.datagen.PotPunDataGen"
+      "io.github.sirantonic.potpun.datagen.PotpunDataGen"
     ],
     "client": [
       "io.github.sirantonic.potpun.client.PotPunClient"
@@ -29,7 +35,8 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "java": ">=${java_version}",
+    "fabric-api": "*"
   }
 }
